@@ -25,6 +25,10 @@ class apb_test extends uvm_test;
     seq=apb_sequence::type_id::create("seq");
     seq.start(env.agent.seqr);
     phase.drop_objection(this);
+
+    $display("====================================================");
+    $display("FINAL FUNCTIONAL COVERAGE VALUE = %0.2f%%",top.intf.cg.get_inst_coverage());
+    $display("====================================================");
   endtask
   
 endclass

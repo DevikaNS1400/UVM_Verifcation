@@ -1,0 +1,1561 @@
+# UVM_INFO /usr/share/questa/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO /usr/share/questa/questasim/verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO test.sv(9) @ 0: uvm_test_top [Test Class] constructor
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_test...
+# UVM_INFO environment.sv(9) @ 0: uvm_test_top.env [env Class] constructor
+# UVM_INFO agent.sv(10) @ 0: uvm_test_top.env.agent [UVM Agent] constructor
+# UVM_INFO scoreboard.sv(11) @ 0: uvm_test_top.env.scb [scoreboard Class] constructor
+# UVM_INFO monitor.sv(11) @ 0: uvm_test_top.env.agent.mon [monitor Class] constructor
+# UVM_INFO driver.sv(10) @ 0: uvm_test_top.env.agent.drv [driver Class] constructor
+# UVM_INFO sequencer.sv(6) @ 0: uvm_test_top.env.agent.seqr [sequencer Class] constructor
+# UVM_INFO agent.sv(21) @ 0: uvm_test_top.env.agent [agent Class] connect phase
+# UVM_INFO environment.sv(19) @ 0: uvm_test_top.env [env Class] connect phase
+# UVM_INFO test.sv(19) @ 0: uvm_test_top [Test Class] connect phase
+# UVM_INFO agent.sv(26) @ 0: uvm_test_top.env.agent [agent Class] elob phase
+# ------------------------------------------------------------
+# Name                     Type                    Size  Value
+# ------------------------------------------------------------
+# agent                    apb_agent               -     @388 
+#   drv                    apb_driver              -     @418 
+#     rsp_port             uvm_analysis_port       -     @435 
+#     seq_item_port        uvm_seq_item_pull_port  -     @426 
+#   mon                    apb_monitor             -     @408 
+#     item_collected_port  uvm_analysis_port       -     @572 
+#   seqr                   apb_sequencer           -     @446 
+#     rsp_export           uvm_analysis_export     -     @454 
+#     seq_item_export      uvm_seq_item_pull_imp   -     @560 
+#     arbitration_queue    array                   0     -    
+#     lock_queue           array                   0     -    
+#     num_last_reqs        integral                32    'd1  
+#     num_last_rsps        integral                32    'd1  
+# ------------------------------------------------------------
+# UVM_INFO test.sv(23) @ 0: uvm_test_top [test Class] run_phase
+# UVM_INFO sequence.sv(8) @ 0: reporter@@seq [sequence Class] constructor
+# UVM_INFO driver.sv(21) @ 0: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 0: reporter@@tx [sequence_item] constructor
+# UVM_INFO sequence_item.sv(18) @ 55000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 55000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=cc88, SWDATA=a09a mem[cc88]=0
+# UVM_INFO scoreboard.sv(41) @ 55000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 55000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=cc88 | SWDATA=a09a | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 55000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 55000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 55000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO sequence_item.sv(18) @ 65000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 65000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=cc88, SWDATA=a09a mem[cc88]=0
+# UVM_INFO scoreboard.sv(41) @ 65000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 65000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=cc88 | SWDATA=a09a | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(84) @ 65000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO interface.sv(62) @ 65000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 65000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO driver.sv(44) @ 75000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=cc88, SWDATA=a09a, swrite=1
+# UVM_INFO driver.sv(21) @ 75000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 75000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 75000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=cc88, SWDATA=a09a mem[cc88]=0
+# UVM_INFO scoreboard.sv(41) @ 75000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 75000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=cc88 | SWDATA=a09a | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 75000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(84) @ 75000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO interface.sv(84) @ 85000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO interface.sv(95) @ 85000: reporter [PENABLE_CLEAR] Penable cleared
+# UVM_INFO interface.sv(95) @ 85000: reporter [PENABLE_CLEAR] Penable cleared
+# UVM_INFO sequence_item.sv(18) @ 95000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 95000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 105000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 105000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 105000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 115000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff89a3, SWDATA=f932, swrite=0
+# UVM_INFO driver.sv(21) @ 115000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 115000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 125000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff89a3, f_data=0, expected data=0,mem[ffff89a3]=0
+# UVM_INFO scoreboard.sv(41) @ 125000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 125000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff89a3 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 125000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 125000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 135000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 135000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 145000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 145000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 155000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=8173, SWDATA=e834, swrite=0
+# UVM_INFO driver.sv(21) @ 155000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 155000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 155000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 165000: uvm_test_top.env.scb [SCB_PASS] SADDR=8173, f_data=0, expected data=0,mem[8173]=0
+# UVM_INFO scoreboard.sv(41) @ 165000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 165000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=8173 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 165000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 165000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 175000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 175000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=4b82, SWDATA=ffff5807 mem[4b82]=0
+# UVM_INFO scoreboard.sv(41) @ 175000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 175000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=4b82 | SWDATA=ffff5807 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 175000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 185000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 185000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 195000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=4b82, SWDATA=ffff5807, swrite=1
+# UVM_INFO driver.sv(21) @ 195000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 195000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=4b82, SWDATA=ffff5807 mem[4b82]=0
+# UVM_INFO scoreboard.sv(41) @ 195000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 195000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=4b82 | SWDATA=ffff5807 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 195000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 205000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 205000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 205000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 215000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 215000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 225000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 225000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 225000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 235000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff52ff, SWDATA=4261, swrite=0
+# UVM_INFO driver.sv(21) @ 235000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 235000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 235000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 245000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff52ff, f_data=0, expected data=0,mem[ffff52ff]=0
+# UVM_INFO scoreboard.sv(41) @ 245000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 245000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff52ff | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 245000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 245000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 255000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 255000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 265000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 265000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 275000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff1551, SWDATA=ffff8fee, swrite=0
+# UVM_INFO driver.sv(21) @ 275000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 275000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 275000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 285000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff1551, f_data=0, expected data=0,mem[ffff1551]=0
+# UVM_INFO scoreboard.sv(41) @ 285000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 285000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff1551 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 285000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 285000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 295000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 295000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 305000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 305000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 315000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=f9a8, SWDATA=bba0, swrite=0
+# UVM_INFO driver.sv(21) @ 315000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 315000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 315000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 325000: uvm_test_top.env.scb [SCB_PASS] SADDR=f9a8, f_data=a09a, expected data=a09a,mem[f9a8]=0
+# UVM_INFO scoreboard.sv(41) @ 325000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 325000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=f9a8 | SWDATA=0 | pready=1 |psel=1| f_data=a09a
+# UVM_INFO interface.sv(51) @ 325000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 325000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 335000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 335000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 345000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 345000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 355000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff9304, SWDATA=ffff89a5, swrite=0
+# UVM_INFO driver.sv(21) @ 355000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 355000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 355000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 365000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff9304, f_data=0, expected data=0,mem[ffff9304]=0
+# UVM_INFO scoreboard.sv(41) @ 365000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 365000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff9304 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 365000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 365000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 375000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 375000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 385000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 385000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 395000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff5ef3, SWDATA=69c6, swrite=0
+# UVM_INFO driver.sv(21) @ 395000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 395000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 395000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 405000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff5ef3, f_data=0, expected data=0,mem[ffff5ef3]=0
+# UVM_INFO scoreboard.sv(41) @ 405000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 405000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff5ef3 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 405000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 405000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 415000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 415000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 425000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 425000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 435000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff2331, SWDATA=d63f, swrite=0
+# UVM_INFO driver.sv(21) @ 435000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 435000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 435000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 445000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff2331, f_data=0, expected data=0,mem[ffff2331]=0
+# UVM_INFO scoreboard.sv(41) @ 445000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 445000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff2331 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 445000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 445000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 455000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 455000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 465000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 465000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 475000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffa0bc, SWDATA=e163, swrite=0
+# UVM_INFO driver.sv(21) @ 475000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 475000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 475000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 485000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffa0bc, f_data=0, expected data=0,mem[ffffa0bc]=0
+# UVM_INFO scoreboard.sv(41) @ 485000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 485000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffa0bc | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 485000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 485000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 495000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 495000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 505000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 505000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 515000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fffff6e8, SWDATA=356e, swrite=0
+# UVM_INFO driver.sv(21) @ 515000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 515000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 515000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 525000: uvm_test_top.env.scb [SCB_PASS] SADDR=fffff6e8, f_data=a09a, expected data=a09a,mem[fffff6e8]=0
+# UVM_INFO scoreboard.sv(41) @ 525000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 525000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=fffff6e8 | SWDATA=0 | pready=1 |psel=1| f_data=a09a
+# UVM_INFO interface.sv(51) @ 525000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 525000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 535000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 535000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 545000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 545000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 555000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffb397, SWDATA=ffff47cb, swrite=0
+# UVM_INFO driver.sv(21) @ 555000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 555000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 555000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 565000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffb397, f_data=0, expected data=0,mem[ffffb397]=0
+# UVM_INFO scoreboard.sv(41) @ 565000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 565000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffb397 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 565000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 565000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 575000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 575000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffab86, SWDATA=2c6f mem[ffffab86]=0
+# UVM_INFO scoreboard.sv(41) @ 575000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 575000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffab86 | SWDATA=2c6f | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 575000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 585000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 585000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 595000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffab86, SWDATA=2c6f, swrite=1
+# UVM_INFO driver.sv(21) @ 595000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 595000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffab86, SWDATA=2c6f mem[ffffab86]=0
+# UVM_INFO scoreboard.sv(41) @ 595000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 595000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffab86 | SWDATA=2c6f | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 595000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 605000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 605000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 605000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 615000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 615000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 625000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 625000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 625000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 635000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=72e6, SWDATA=5216, swrite=0
+# UVM_INFO driver.sv(21) @ 635000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 635000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 635000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 645000: uvm_test_top.env.scb [SCB_PASS] SADDR=72e6, f_data=2c6f, expected data=2c6f,mem[72e6]=0
+# UVM_INFO scoreboard.sv(41) @ 645000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 645000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=72e6 | SWDATA=0 | pready=1 |psel=1| f_data=2c6f
+# UVM_INFO interface.sv(51) @ 645000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 645000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 655000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 655000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 665000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 665000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 675000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff630d, SWDATA=ffffa968, swrite=0
+# UVM_INFO driver.sv(21) @ 675000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 675000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 675000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 685000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff630d, f_data=0, expected data=0,mem[ffff630d]=0
+# UVM_INFO scoreboard.sv(41) @ 685000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 685000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff630d | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 685000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 685000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 695000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 695000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=dd0b, SWDATA=243a mem[dd0b]=0
+# UVM_INFO scoreboard.sv(41) @ 695000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 695000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=dd0b | SWDATA=243a | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 695000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 705000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 705000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 715000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=dd0b, SWDATA=243a, swrite=1
+# UVM_INFO driver.sv(21) @ 715000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 715000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=dd0b, SWDATA=243a mem[dd0b]=0
+# UVM_INFO scoreboard.sv(41) @ 715000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 715000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=dd0b | SWDATA=243a | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 715000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 725000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 725000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 725000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 735000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 735000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 745000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 745000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 745000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 755000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=5b97, SWDATA=db1b, swrite=0
+# UVM_INFO driver.sv(21) @ 755000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 755000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 755000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 765000: uvm_test_top.env.scb [SCB_PASS] SADDR=5b97, f_data=0, expected data=0,mem[5b97]=0
+# UVM_INFO scoreboard.sv(41) @ 765000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 765000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=5b97 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 765000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 765000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 775000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 775000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=d5ee, SWDATA=7165 mem[d5ee]=0
+# UVM_INFO scoreboard.sv(41) @ 775000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 775000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=d5ee | SWDATA=7165 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 775000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 785000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 785000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 795000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=d5ee, SWDATA=7165, swrite=1
+# UVM_INFO driver.sv(21) @ 795000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 795000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 795000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=d5ee, SWDATA=7165 mem[d5ee]=0
+# UVM_INFO scoreboard.sv(41) @ 795000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 795000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=d5ee | SWDATA=7165 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 795000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 795000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 805000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 805000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 805000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 815000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 815000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=c97e, SWDATA=4652 mem[c97e]=0
+# UVM_INFO scoreboard.sv(41) @ 815000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 815000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=c97e | SWDATA=4652 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 815000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 825000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 825000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 825000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 835000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=c97e, SWDATA=4652, swrite=1
+# UVM_INFO driver.sv(21) @ 835000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 835000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 835000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=c97e, SWDATA=4652 mem[c97e]=0
+# UVM_INFO scoreboard.sv(41) @ 835000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 835000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=c97e | SWDATA=4652 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 835000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 835000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 845000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 845000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 845000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 855000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 855000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 865000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 865000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 865000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 875000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff0b34, SWDATA=eb11, swrite=0
+# UVM_INFO driver.sv(21) @ 875000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 875000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 875000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 885000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff0b34, f_data=0, expected data=0,mem[ffff0b34]=0
+# UVM_INFO scoreboard.sv(41) @ 885000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 885000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff0b34 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 885000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 885000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 895000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 895000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff5052, SWDATA=ffff4cc5 mem[ffff5052]=0
+# UVM_INFO scoreboard.sv(41) @ 895000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 895000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff5052 | SWDATA=ffff4cc5 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 895000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 905000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 905000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 915000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff5052, SWDATA=ffff4cc5, swrite=1
+# UVM_INFO driver.sv(21) @ 915000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 915000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff5052, SWDATA=ffff4cc5 mem[ffff5052]=0
+# UVM_INFO scoreboard.sv(41) @ 915000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 915000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff5052 | SWDATA=ffff4cc5 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 915000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 925000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 925000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 925000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 935000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 935000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=1998, SWDATA=ffff45fa mem[1998]=0
+# UVM_INFO scoreboard.sv(41) @ 935000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 935000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=1998 | SWDATA=ffff45fa | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 935000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 945000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 945000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 945000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 955000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=1998, SWDATA=ffff45fa, swrite=1
+# UVM_INFO driver.sv(21) @ 955000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 955000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=1998, SWDATA=ffff45fa mem[1998]=0
+# UVM_INFO scoreboard.sv(41) @ 955000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 955000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=1998 | SWDATA=ffff45fa | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 955000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 965000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 965000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 965000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 975000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 975000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff781d, SWDATA=a9be mem[ffff781d]=0
+# UVM_INFO scoreboard.sv(41) @ 975000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 975000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff781d | SWDATA=a9be | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 975000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 985000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 985000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 985000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 995000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff781d, SWDATA=a9be, swrite=1
+# UVM_INFO driver.sv(21) @ 995000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 995000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 995000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff781d, SWDATA=a9be mem[ffff781d]=0
+# UVM_INFO scoreboard.sv(41) @ 995000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 995000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff781d | SWDATA=a9be | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 995000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 995000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1005000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1005000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1005000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1015000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1015000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1025000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1025000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1025000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1035000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=dadb, SWDATA=ffffe9ee, swrite=0
+# UVM_INFO driver.sv(21) @ 1035000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1035000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1035000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1045000: uvm_test_top.env.scb [SCB_PASS] SADDR=dadb, f_data=0, expected data=0,mem[dadb]=0
+# UVM_INFO scoreboard.sv(41) @ 1045000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1045000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=dadb | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1045000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1045000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1055000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1055000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1065000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1065000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1075000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff7889, SWDATA=ffffb178, swrite=0
+# UVM_INFO driver.sv(21) @ 1075000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1075000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1075000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1085000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff7889, f_data=0, expected data=0,mem[ffff7889]=0
+# UVM_INFO scoreboard.sv(41) @ 1085000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1085000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff7889 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1085000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1085000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1095000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1095000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1105000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1105000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1115000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff2423, SWDATA=cbbb, swrite=0
+# UVM_INFO driver.sv(21) @ 1115000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1115000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1125000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff2423, f_data=0, expected data=0,mem[ffff2423]=0
+# UVM_INFO scoreboard.sv(41) @ 1125000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1125000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff2423 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1125000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1125000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1135000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1135000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1145000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1145000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1155000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffe0e6, SWDATA=e2fa, swrite=0
+# UVM_INFO driver.sv(21) @ 1155000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1155000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1155000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1165000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffe0e6, f_data=2c6f, expected data=2c6f,mem[ffffe0e6]=0
+# UVM_INFO scoreboard.sv(41) @ 1165000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1165000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffe0e6 | SWDATA=0 | pready=1 |psel=1| f_data=2c6f
+# UVM_INFO interface.sv(51) @ 1165000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1165000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1175000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1175000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1185000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1185000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1195000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=4a20, SWDATA=f93, swrite=0
+# UVM_INFO driver.sv(21) @ 1195000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1195000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1205000: uvm_test_top.env.scb [SCB_PASS] SADDR=4a20, f_data=0, expected data=0,mem[4a20]=0
+# UVM_INFO scoreboard.sv(41) @ 1205000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1205000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=4a20 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1205000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1205000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1215000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1215000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1225000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1225000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1235000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=f373, SWDATA=bf74, swrite=0
+# UVM_INFO driver.sv(21) @ 1235000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1235000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1235000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1245000: uvm_test_top.env.scb [SCB_PASS] SADDR=f373, f_data=0, expected data=0,mem[f373]=0
+# UVM_INFO scoreboard.sv(41) @ 1245000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1245000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=f373 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1245000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1245000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1255000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1255000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1265000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1265000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1275000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=afb0, SWDATA=ffff361b, swrite=0
+# UVM_INFO driver.sv(21) @ 1275000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1275000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1275000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1285000: uvm_test_top.env.scb [SCB_PASS] SADDR=afb0, f_data=0, expected data=0,mem[afb0]=0
+# UVM_INFO scoreboard.sv(41) @ 1285000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1285000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=afb0 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1285000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1285000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1295000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1295000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1305000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1305000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1315000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fffffefe, SWDATA=30a5, swrite=0
+# UVM_INFO driver.sv(21) @ 1315000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1315000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1315000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1325000: uvm_test_top.env.scb [SCB_PASS] SADDR=fffffefe, f_data=4652, expected data=4652,mem[fffffefe]=0
+# UVM_INFO scoreboard.sv(41) @ 1325000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1325000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=fffffefe | SWDATA=0 | pready=1 |psel=1| f_data=4652
+# UVM_INFO interface.sv(51) @ 1325000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1325000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1335000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1335000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1345000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1345000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1355000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=8b28, SWDATA=19ed, swrite=0
+# UVM_INFO driver.sv(21) @ 1355000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1355000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1355000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1365000: uvm_test_top.env.scb [SCB_PASS] SADDR=8b28, f_data=a09a, expected data=a09a,mem[8b28]=0
+# UVM_INFO scoreboard.sv(41) @ 1365000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1365000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=8b28 | SWDATA=0 | pready=1 |psel=1| f_data=a09a
+# UVM_INFO interface.sv(51) @ 1365000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1365000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1375000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1375000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1385000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1385000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1395000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff88e3, SWDATA=7171, swrite=0
+# UVM_INFO driver.sv(21) @ 1395000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1395000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1395000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1405000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff88e3, f_data=0, expected data=0,mem[ffff88e3]=0
+# UVM_INFO scoreboard.sv(41) @ 1405000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1405000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff88e3 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1405000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1405000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1415000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1415000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1425000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1425000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1435000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=59ce, SWDATA=396, swrite=0
+# UVM_INFO driver.sv(21) @ 1435000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1435000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1435000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1445000: uvm_test_top.env.scb [SCB_PASS] SADDR=59ce, f_data=7165, expected data=7165,mem[59ce]=0
+# UVM_INFO scoreboard.sv(41) @ 1445000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1445000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=59ce | SWDATA=0 | pready=1 |psel=1| f_data=7165
+# UVM_INFO interface.sv(51) @ 1445000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1445000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1455000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1455000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1465000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1465000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1475000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff19eb, SWDATA=ffffe80c, swrite=0
+# UVM_INFO driver.sv(21) @ 1475000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1475000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1475000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1485000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff19eb, f_data=243a, expected data=243a,mem[ffff19eb]=0
+# UVM_INFO scoreboard.sv(41) @ 1485000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1485000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff19eb | SWDATA=0 | pready=1 |psel=1| f_data=243a
+# UVM_INFO interface.sv(51) @ 1485000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1485000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1495000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1495000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1505000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1505000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1515000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=3a9a, SWDATA=ffff6985, swrite=0
+# UVM_INFO driver.sv(21) @ 1515000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1515000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1515000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1525000: uvm_test_top.env.scb [SCB_PASS] SADDR=3a9a, f_data=0, expected data=0,mem[3a9a]=0
+# UVM_INFO scoreboard.sv(41) @ 1525000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1525000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=3a9a | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1525000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1525000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1535000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1535000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1545000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1545000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1555000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff81e4, SWDATA=ffffbc11, swrite=0
+# UVM_INFO driver.sv(21) @ 1555000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1555000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1555000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1565000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff81e4, f_data=0, expected data=0,mem[ffff81e4]=0
+# UVM_INFO scoreboard.sv(41) @ 1565000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1565000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff81e4 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1565000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1565000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1575000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1575000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1585000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1585000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1595000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=2fa9, SWDATA=7b43, swrite=0
+# UVM_INFO driver.sv(21) @ 1595000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1595000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1605000: uvm_test_top.env.scb [SCB_PASS] SADDR=2fa9, f_data=0, expected data=0,mem[2fa9]=0
+# UVM_INFO scoreboard.sv(41) @ 1605000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1605000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=2fa9 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1605000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1605000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1615000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1615000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1625000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1625000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1635000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff59f2, SWDATA=ffffa6c6, swrite=0
+# UVM_INFO driver.sv(21) @ 1635000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1635000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1635000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1645000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff59f2, f_data=ffff4cc5, expected data=ffff4cc5,mem[ffff59f2]=0
+# UVM_INFO scoreboard.sv(41) @ 1645000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1645000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff59f2 | SWDATA=0 | pready=1 |psel=1| f_data=ffff4cc5
+# UVM_INFO interface.sv(51) @ 1645000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1645000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1655000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 1655000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=58bd, SWDATA=eb6c mem[58bd]=0
+# UVM_INFO scoreboard.sv(41) @ 1655000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 1655000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=58bd | SWDATA=eb6c | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 1655000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1665000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1665000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1675000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=58bd, SWDATA=eb6c, swrite=1
+# UVM_INFO driver.sv(21) @ 1675000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1675000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 1675000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=58bd, SWDATA=eb6c mem[58bd]=0
+# UVM_INFO scoreboard.sv(41) @ 1675000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 1675000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=58bd | SWDATA=eb6c | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 1675000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1675000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1685000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1685000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1685000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1695000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1695000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1705000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1705000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1705000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1715000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=79f4, SWDATA=ffff21b0, swrite=0
+# UVM_INFO driver.sv(21) @ 1715000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1715000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1725000: uvm_test_top.env.scb [SCB_PASS] SADDR=79f4, f_data=0, expected data=0,mem[79f4]=0
+# UVM_INFO scoreboard.sv(41) @ 1725000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1725000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=79f4 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1725000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1725000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1735000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1735000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1745000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1745000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1755000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=915, SWDATA=ffff17d6, swrite=0
+# UVM_INFO driver.sv(21) @ 1755000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1755000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1755000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1765000: uvm_test_top.env.scb [SCB_PASS] SADDR=915, f_data=0, expected data=0,mem[915]=0
+# UVM_INFO scoreboard.sv(41) @ 1765000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1765000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=915 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1765000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1765000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1775000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1775000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1785000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1785000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1795000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=23da, SWDATA=ffff971c, swrite=0
+# UVM_INFO driver.sv(21) @ 1795000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1795000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1795000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1805000: uvm_test_top.env.scb [SCB_PASS] SADDR=23da, f_data=0, expected data=0,mem[23da]=0
+# UVM_INFO scoreboard.sv(41) @ 1805000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1805000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=23da | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1805000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1805000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1815000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1815000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1825000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1825000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1835000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=c80c, SWDATA=7706, swrite=0
+# UVM_INFO driver.sv(21) @ 1835000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1835000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1835000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1845000: uvm_test_top.env.scb [SCB_PASS] SADDR=c80c, f_data=0, expected data=0,mem[c80c]=0
+# UVM_INFO scoreboard.sv(41) @ 1845000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1845000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=c80c | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 1845000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1845000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1855000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1855000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1865000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1865000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1875000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=b4d2, SWDATA=ffffbcc3, swrite=0
+# UVM_INFO driver.sv(21) @ 1875000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1875000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1875000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1885000: uvm_test_top.env.scb [SCB_PASS] SADDR=b4d2, f_data=ffff4cc5, expected data=ffff4cc5,mem[b4d2]=0
+# UVM_INFO scoreboard.sv(41) @ 1885000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1885000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=b4d2 | SWDATA=0 | pready=1 |psel=1| f_data=ffff4cc5
+# UVM_INFO interface.sv(51) @ 1885000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1885000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1895000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 1895000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=f1ce, SWDATA=e5b4 mem[f1ce]=0
+# UVM_INFO scoreboard.sv(41) @ 1895000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 1895000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=f1ce | SWDATA=e5b4 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 1895000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1905000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1905000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1915000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=f1ce, SWDATA=e5b4, swrite=1
+# UVM_INFO driver.sv(21) @ 1915000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 1915000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=f1ce, SWDATA=e5b4 mem[f1ce]=0
+# UVM_INFO scoreboard.sv(41) @ 1915000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 1915000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=f1ce | SWDATA=e5b4 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 1915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1915000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1925000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1925000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1925000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1935000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1935000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 1945000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 1945000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1945000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1955000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffcaa2, SWDATA=cd8c, swrite=0
+# UVM_INFO driver.sv(21) @ 1955000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1955000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 1965000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffcaa2, f_data=ffff5807, expected data=ffff5807,mem[ffffcaa2]=0
+# UVM_INFO scoreboard.sv(41) @ 1965000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 1965000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffcaa2 | SWDATA=0 | pready=1 |psel=1| f_data=ffff5807
+# UVM_INFO interface.sv(51) @ 1965000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1965000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 1975000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1975000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 1985000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 1985000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 1995000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff9b3e, SWDATA=ffff6dbb, swrite=0
+# UVM_INFO driver.sv(21) @ 1995000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 1995000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 1995000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2005000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff9b3e, f_data=4652, expected data=4652,mem[ffff9b3e]=0
+# UVM_INFO scoreboard.sv(41) @ 2005000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2005000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff9b3e | SWDATA=0 | pready=1 |psel=1| f_data=4652
+# UVM_INFO interface.sv(51) @ 2005000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2005000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2015000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2015000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=9616, SWDATA=ffff3355 mem[9616]=0
+# UVM_INFO scoreboard.sv(41) @ 2015000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2015000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=9616 | SWDATA=ffff3355 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2015000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2025000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2025000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2035000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=9616, SWDATA=ffff3355, swrite=1
+# UVM_INFO driver.sv(21) @ 2035000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2035000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2035000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=9616, SWDATA=ffff3355 mem[9616]=0
+# UVM_INFO scoreboard.sv(41) @ 2035000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2035000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=9616 | SWDATA=ffff3355 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2035000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2035000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2045000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2045000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2045000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2055000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2055000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2065000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2065000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2065000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2075000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff6986, SWDATA=5cc0, swrite=0
+# UVM_INFO driver.sv(21) @ 2075000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2075000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2075000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2085000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff6986, f_data=2c6f, expected data=2c6f,mem[ffff6986]=0
+# UVM_INFO scoreboard.sv(41) @ 2085000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2085000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff6986 | SWDATA=0 | pready=1 |psel=1| f_data=2c6f
+# UVM_INFO interface.sv(51) @ 2085000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2085000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2095000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2095000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=cfb9, SWDATA=ffffeeed mem[cfb9]=0
+# UVM_INFO scoreboard.sv(41) @ 2095000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2095000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=cfb9 | SWDATA=ffffeeed | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2095000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2105000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2105000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2115000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=cfb9, SWDATA=ffffeeed, swrite=1
+# UVM_INFO driver.sv(21) @ 2115000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2115000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=cfb9, SWDATA=ffffeeed mem[cfb9]=0
+# UVM_INFO scoreboard.sv(41) @ 2115000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2115000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=cfb9 | SWDATA=ffffeeed | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2115000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2125000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2125000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2125000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2135000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2135000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=8fa1, SWDATA=ffffb6fb mem[8fa1]=0
+# UVM_INFO scoreboard.sv(41) @ 2135000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2135000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=8fa1 | SWDATA=ffffb6fb | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2135000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2145000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2145000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2145000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2155000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=8fa1, SWDATA=ffffb6fb, swrite=1
+# UVM_INFO driver.sv(21) @ 2155000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2155000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2155000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=8fa1, SWDATA=ffffb6fb mem[8fa1]=0
+# UVM_INFO scoreboard.sv(41) @ 2155000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2155000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=8fa1 | SWDATA=ffffb6fb | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2155000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2155000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2165000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2165000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2165000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2175000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2175000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff33f4, SWDATA=706d mem[ffff33f4]=0
+# UVM_INFO scoreboard.sv(41) @ 2175000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2175000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff33f4 | SWDATA=706d | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2175000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2185000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2185000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2185000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2195000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff33f4, SWDATA=706d, swrite=1
+# UVM_INFO driver.sv(21) @ 2195000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2195000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff33f4, SWDATA=706d mem[ffff33f4]=0
+# UVM_INFO scoreboard.sv(41) @ 2195000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2195000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff33f4 | SWDATA=706d | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2195000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2205000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2205000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2205000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2215000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2215000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffc72a, SWDATA=ffff33a0 mem[ffffc72a]=0
+# UVM_INFO scoreboard.sv(41) @ 2215000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2215000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffc72a | SWDATA=ffff33a0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2215000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2225000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2225000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2225000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2235000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffc72a, SWDATA=ffff33a0, swrite=1
+# UVM_INFO driver.sv(21) @ 2235000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2235000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2235000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffc72a, SWDATA=ffff33a0 mem[ffffc72a]=0
+# UVM_INFO scoreboard.sv(41) @ 2235000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2235000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffc72a | SWDATA=ffff33a0 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2235000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2235000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2245000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2245000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2245000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2255000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2255000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2265000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2265000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2265000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2275000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=a44d, SWDATA=8563, swrite=0
+# UVM_INFO driver.sv(21) @ 2275000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2275000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2275000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2285000: uvm_test_top.env.scb [SCB_PASS] SADDR=a44d, f_data=0, expected data=0,mem[a44d]=0
+# UVM_INFO scoreboard.sv(41) @ 2285000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2285000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=a44d | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 2285000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2285000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2295000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2295000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2305000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2305000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2315000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=8efb, SWDATA=ffffe624, swrite=0
+# UVM_INFO driver.sv(21) @ 2315000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2315000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2315000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2325000: uvm_test_top.env.scb [SCB_PASS] SADDR=8efb, f_data=0, expected data=0,mem[8efb]=0
+# UVM_INFO scoreboard.sv(41) @ 2325000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2325000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=8efb | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 2325000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2325000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2335000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2335000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff4732, SWDATA=ffff1b6c mem[ffff4732]=0
+# UVM_INFO scoreboard.sv(41) @ 2335000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2335000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff4732 | SWDATA=ffff1b6c | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2335000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2345000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2345000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2355000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff4732, SWDATA=ffff1b6c, swrite=1
+# UVM_INFO driver.sv(21) @ 2355000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2355000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2355000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff4732, SWDATA=ffff1b6c mem[ffff4732]=0
+# UVM_INFO scoreboard.sv(41) @ 2355000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2355000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff4732 | SWDATA=ffff1b6c | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2355000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2355000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2365000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2365000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2365000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2375000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2375000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffef6d, SWDATA=65d6 mem[ffffef6d]=0
+# UVM_INFO scoreboard.sv(41) @ 2375000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2375000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffef6d | SWDATA=65d6 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2375000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2385000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2385000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2385000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2395000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffef6d, SWDATA=65d6, swrite=1
+# UVM_INFO driver.sv(21) @ 2395000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2395000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2395000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffef6d, SWDATA=65d6 mem[ffffef6d]=0
+# UVM_INFO scoreboard.sv(41) @ 2395000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2395000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffef6d | SWDATA=65d6 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2395000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2395000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2405000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2405000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2405000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2415000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2415000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2425000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2425000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2425000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2435000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffb90f, SWDATA=aad1, swrite=0
+# UVM_INFO driver.sv(21) @ 2435000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2435000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2435000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2445000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffb90f, f_data=0, expected data=0,mem[ffffb90f]=0
+# UVM_INFO scoreboard.sv(41) @ 2445000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2445000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffb90f | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 2445000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2445000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2455000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2455000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2465000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2465000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2475000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffc634, SWDATA=f5b9, swrite=0
+# UVM_INFO driver.sv(21) @ 2475000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2475000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2475000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2485000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffc634, f_data=706d, expected data=706d,mem[ffffc634]=0
+# UVM_INFO scoreboard.sv(41) @ 2485000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2485000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffc634 | SWDATA=0 | pready=1 |psel=1| f_data=706d
+# UVM_INFO interface.sv(51) @ 2485000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2485000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2495000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2495000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2505000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2505000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2515000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=4b1e, SWDATA=ffff1ec1, swrite=0
+# UVM_INFO driver.sv(21) @ 2515000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2515000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2515000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2525000: uvm_test_top.env.scb [SCB_PASS] SADDR=4b1e, f_data=4652, expected data=4652,mem[4b1e]=0
+# UVM_INFO scoreboard.sv(41) @ 2525000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2525000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=4b1e | SWDATA=0 | pready=1 |psel=1| f_data=4652
+# UVM_INFO interface.sv(51) @ 2525000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2525000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2535000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2535000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2545000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2545000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2555000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=551c, SWDATA=ffff72a2, swrite=0
+# UVM_INFO driver.sv(21) @ 2555000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2555000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2555000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2565000: uvm_test_top.env.scb [SCB_PASS] SADDR=551c, f_data=0, expected data=0,mem[551c]=0
+# UVM_INFO scoreboard.sv(41) @ 2565000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2565000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=551c | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 2565000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2565000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2575000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2575000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2585000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2585000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2595000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fd06, SWDATA=7611, swrite=0
+# UVM_INFO driver.sv(21) @ 2595000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2595000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2605000: uvm_test_top.env.scb [SCB_PASS] SADDR=fd06, f_data=2c6f, expected data=2c6f,mem[fd06]=0
+# UVM_INFO scoreboard.sv(41) @ 2605000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2605000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=fd06 | SWDATA=0 | pready=1 |psel=1| f_data=2c6f
+# UVM_INFO interface.sv(51) @ 2605000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2605000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2615000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2615000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff0425, SWDATA=cd8d mem[ffff0425]=0
+# UVM_INFO scoreboard.sv(41) @ 2615000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2615000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff0425 | SWDATA=cd8d | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2615000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2625000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2625000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2635000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff0425, SWDATA=cd8d, swrite=1
+# UVM_INFO driver.sv(21) @ 2635000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2635000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2635000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff0425, SWDATA=cd8d mem[ffff0425]=0
+# UVM_INFO scoreboard.sv(41) @ 2635000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2635000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff0425 | SWDATA=cd8d | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2635000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2635000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2645000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2645000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2645000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2655000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2655000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2665000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2665000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2665000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2675000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=3238, SWDATA=92a6, swrite=0
+# UVM_INFO driver.sv(21) @ 2675000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2675000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2675000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2685000: uvm_test_top.env.scb [SCB_PASS] SADDR=3238, f_data=ffff45fa, expected data=ffff45fa,mem[3238]=0
+# UVM_INFO scoreboard.sv(41) @ 2685000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2685000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=3238 | SWDATA=0 | pready=1 |psel=1| f_data=ffff45fa
+# UVM_INFO interface.sv(51) @ 2685000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2685000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2695000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2695000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=fbcb, SWDATA=35ae mem[fbcb]=0
+# UVM_INFO scoreboard.sv(41) @ 2695000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2695000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=fbcb | SWDATA=35ae | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2695000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2705000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2705000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2715000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fbcb, SWDATA=35ae, swrite=1
+# UVM_INFO driver.sv(21) @ 2715000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2715000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=fbcb, SWDATA=35ae mem[fbcb]=0
+# UVM_INFO scoreboard.sv(41) @ 2715000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2715000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=fbcb | SWDATA=35ae | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2715000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2725000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2725000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2725000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2735000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2735000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff170b, SWDATA=647b mem[ffff170b]=0
+# UVM_INFO scoreboard.sv(41) @ 2735000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2735000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff170b | SWDATA=647b | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2735000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2745000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2745000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2745000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2755000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff170b, SWDATA=647b, swrite=1
+# UVM_INFO driver.sv(21) @ 2755000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2755000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2755000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff170b, SWDATA=647b mem[ffff170b]=0
+# UVM_INFO scoreboard.sv(41) @ 2755000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2755000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff170b | SWDATA=647b | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2755000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2755000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2765000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2765000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2765000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2775000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2775000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2785000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2785000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2785000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2795000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff6556, SWDATA=32bf, swrite=0
+# UVM_INFO driver.sv(21) @ 2795000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2795000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2795000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2805000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff6556, f_data=ffff3355, expected data=ffff3355,mem[ffff6556]=0
+# UVM_INFO scoreboard.sv(41) @ 2805000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2805000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff6556 | SWDATA=0 | pready=1 |psel=1| f_data=ffff3355
+# UVM_INFO interface.sv(51) @ 2805000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2805000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2815000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2815000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2825000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2825000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2835000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fffffd16, SWDATA=ffff785a, swrite=0
+# UVM_INFO driver.sv(21) @ 2835000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2835000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2835000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 2845000: uvm_test_top.env.scb [SCB_PASS] SADDR=fffffd16, f_data=ffff3355, expected data=ffff3355,mem[fffffd16]=0
+# UVM_INFO scoreboard.sv(41) @ 2845000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 2845000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=fffffd16 | SWDATA=0 | pready=1 |psel=1| f_data=ffff3355
+# UVM_INFO interface.sv(51) @ 2845000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2845000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2855000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2855000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=a47c, SWDATA=273 mem[a47c]=0
+# UVM_INFO scoreboard.sv(41) @ 2855000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2855000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=a47c | SWDATA=273 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2855000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 2865000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2865000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2875000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=a47c, SWDATA=273, swrite=1
+# UVM_INFO driver.sv(21) @ 2875000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2875000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2875000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=a47c, SWDATA=273 mem[a47c]=0
+# UVM_INFO scoreboard.sv(41) @ 2875000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2875000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=a47c | SWDATA=273 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2875000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2875000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2885000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2885000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2885000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2895000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2895000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff5585, SWDATA=ab50 mem[ffff5585]=0
+# UVM_INFO scoreboard.sv(41) @ 2895000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2895000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff5585 | SWDATA=ab50 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2895000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2905000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2905000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2905000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2915000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff5585, SWDATA=ab50, swrite=1
+# UVM_INFO driver.sv(21) @ 2915000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2915000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff5585, SWDATA=ab50 mem[ffff5585]=0
+# UVM_INFO scoreboard.sv(41) @ 2915000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2915000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff5585 | SWDATA=ab50 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2915000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2925000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2925000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2925000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2935000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2935000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=af89, SWDATA=b10 mem[af89]=0
+# UVM_INFO scoreboard.sv(41) @ 2935000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2935000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=af89 | SWDATA=b10 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 2935000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2945000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2945000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2945000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2955000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=af89, SWDATA=b10, swrite=1
+# UVM_INFO driver.sv(21) @ 2955000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 2955000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=af89, SWDATA=b10 mem[af89]=0
+# UVM_INFO scoreboard.sv(41) @ 2955000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 2955000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=af89 | SWDATA=b10 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 2955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2955000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2965000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2965000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2965000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 2975000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2975000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 2985000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 2985000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 2985000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 2995000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffe04d, SWDATA=1d17, swrite=0
+# UVM_INFO driver.sv(21) @ 2995000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 2995000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 2995000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3005000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffe04d, f_data=65d6, expected data=65d6,mem[ffffe04d]=0
+# UVM_INFO scoreboard.sv(41) @ 3005000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3005000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffe04d | SWDATA=0 | pready=1 |psel=1| f_data=65d6
+# UVM_INFO interface.sv(51) @ 3005000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3005000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3015000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3015000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff4014, SWDATA=bca2 mem[ffff4014]=0
+# UVM_INFO scoreboard.sv(41) @ 3015000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3015000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff4014 | SWDATA=bca2 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 3015000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3025000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3025000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3035000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff4014, SWDATA=bca2, swrite=1
+# UVM_INFO driver.sv(21) @ 3035000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3035000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3035000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff4014, SWDATA=bca2 mem[ffff4014]=0
+# UVM_INFO scoreboard.sv(41) @ 3035000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3035000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff4014 | SWDATA=bca2 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 3035000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3035000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3045000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3045000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3045000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3055000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3055000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffa2ea, SWDATA=6894 mem[ffffa2ea]=0
+# UVM_INFO scoreboard.sv(41) @ 3055000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3055000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffa2ea | SWDATA=6894 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 3055000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3065000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3065000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3065000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3075000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffa2ea, SWDATA=6894, swrite=1
+# UVM_INFO driver.sv(21) @ 3075000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3075000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3075000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffffa2ea, SWDATA=6894 mem[ffffa2ea]=0
+# UVM_INFO scoreboard.sv(41) @ 3075000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3075000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffffa2ea | SWDATA=6894 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 3075000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3075000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3085000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3085000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3085000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3095000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3095000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=a5aa, SWDATA=1804 mem[a5aa]=0
+# UVM_INFO scoreboard.sv(41) @ 3095000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3095000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=a5aa | SWDATA=1804 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 3095000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3105000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3105000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3105000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3115000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=a5aa, SWDATA=1804, swrite=1
+# UVM_INFO driver.sv(21) @ 3115000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3115000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=a5aa, SWDATA=1804 mem[a5aa]=0
+# UVM_INFO scoreboard.sv(41) @ 3115000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3115000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=a5aa | SWDATA=1804 | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 3115000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3115000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3125000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3125000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3125000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3135000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3135000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3145000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3145000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3145000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3155000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=b903, SWDATA=d663, swrite=0
+# UVM_INFO driver.sv(21) @ 3155000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3155000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3155000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3165000: uvm_test_top.env.scb [SCB_PASS] SADDR=b903, f_data=0, expected data=0,mem[b903]=0
+# UVM_INFO scoreboard.sv(41) @ 3165000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3165000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=b903 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3165000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3165000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3175000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3175000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3185000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3185000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3195000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff50d7, SWDATA=ffff1382, swrite=0
+# UVM_INFO driver.sv(21) @ 3195000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3195000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3195000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3205000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff50d7, f_data=0, expected data=0,mem[ffff50d7]=0
+# UVM_INFO scoreboard.sv(41) @ 3205000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3205000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff50d7 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3205000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3205000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3215000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3215000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3225000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3225000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3235000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=cc2e, SWDATA=7c5e, swrite=0
+# UVM_INFO driver.sv(21) @ 3235000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3235000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3235000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3245000: uvm_test_top.env.scb [SCB_PASS] SADDR=cc2e, f_data=e5b4, expected data=e5b4,mem[cc2e]=0
+# UVM_INFO scoreboard.sv(41) @ 3245000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3245000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=cc2e | SWDATA=0 | pready=1 |psel=1| f_data=e5b4
+# UVM_INFO interface.sv(51) @ 3245000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3245000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3255000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3255000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3265000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3265000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3275000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff33c0, SWDATA=965, swrite=0
+# UVM_INFO driver.sv(21) @ 3275000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3275000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3275000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3285000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff33c0, f_data=0, expected data=0,mem[ffff33c0]=0
+# UVM_INFO scoreboard.sv(41) @ 3285000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3285000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff33c0 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3285000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3285000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3295000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3295000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3305000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3305000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3315000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff09b5, SWDATA=ffffeb78, swrite=0
+# UVM_INFO driver.sv(21) @ 3315000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3315000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3315000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3325000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff09b5, f_data=0, expected data=0,mem[ffff09b5]=0
+# UVM_INFO scoreboard.sv(41) @ 3325000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3325000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff09b5 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3325000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3325000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3335000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3335000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3345000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3345000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3355000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fffff8be, SWDATA=2, swrite=0
+# UVM_INFO driver.sv(21) @ 3355000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3355000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3355000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3365000: uvm_test_top.env.scb [SCB_PASS] SADDR=fffff8be, f_data=4652, expected data=4652,mem[fffff8be]=0
+# UVM_INFO scoreboard.sv(41) @ 3365000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3365000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=fffff8be | SWDATA=0 | pready=1 |psel=1| f_data=4652
+# UVM_INFO interface.sv(51) @ 3365000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3365000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3375000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3375000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3385000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3385000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3395000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=1fc9, SWDATA=ffff0966, swrite=0
+# UVM_INFO driver.sv(21) @ 3395000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3395000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3395000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3405000: uvm_test_top.env.scb [SCB_PASS] SADDR=1fc9, f_data=b10, expected data=b10,mem[1fc9]=0
+# UVM_INFO scoreboard.sv(41) @ 3405000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3405000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=1fc9 | SWDATA=0 | pready=1 |psel=1| f_data=b10
+# UVM_INFO interface.sv(51) @ 3405000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3405000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3415000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3415000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff6fa0, SWDATA=ffff098e mem[ffff6fa0]=0
+# UVM_INFO scoreboard.sv(41) @ 3415000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3415000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff6fa0 | SWDATA=ffff098e | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 3415000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3425000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3425000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3435000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff6fa0, SWDATA=ffff098e, swrite=1
+# UVM_INFO driver.sv(21) @ 3435000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3435000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3435000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=ffff6fa0, SWDATA=ffff098e mem[ffff6fa0]=0
+# UVM_INFO scoreboard.sv(41) @ 3435000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3435000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=ffff6fa0 | SWDATA=ffff098e | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 3435000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3435000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3445000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3445000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3445000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3455000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3455000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3465000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3465000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3465000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3475000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff26f1, SWDATA=2dc4, swrite=0
+# UVM_INFO driver.sv(21) @ 3475000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3475000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3475000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3485000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff26f1, f_data=0, expected data=0,mem[ffff26f1]=0
+# UVM_INFO scoreboard.sv(41) @ 3485000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3485000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff26f1 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3485000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3485000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3495000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3495000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3505000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3505000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3515000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffbef2, SWDATA=9c24, swrite=0
+# UVM_INFO driver.sv(21) @ 3515000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3515000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3515000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3525000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffbef2, f_data=ffff1b6c, expected data=ffff1b6c,mem[ffffbef2]=0
+# UVM_INFO scoreboard.sv(41) @ 3525000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3525000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffbef2 | SWDATA=0 | pready=1 |psel=1| f_data=ffff1b6c
+# UVM_INFO interface.sv(51) @ 3525000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3525000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3535000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3535000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3545000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3545000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3555000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=4b02, SWDATA=ffff6d79, swrite=0
+# UVM_INFO driver.sv(21) @ 3555000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3555000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3555000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3565000: uvm_test_top.env.scb [SCB_PASS] SADDR=4b02, f_data=ffff5807, expected data=ffff5807,mem[4b02]=0
+# UVM_INFO scoreboard.sv(41) @ 3565000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3565000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=4b02 | SWDATA=0 | pready=1 |psel=1| f_data=ffff5807
+# UVM_INFO interface.sv(51) @ 3565000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3565000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3575000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3575000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=fffff96d, SWDATA=ffff8d3a mem[fffff96d]=0
+# UVM_INFO scoreboard.sv(41) @ 3575000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3575000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=fffff96d | SWDATA=ffff8d3a | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(73) @ 3575000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3585000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3585000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3595000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=fffff96d, SWDATA=ffff8d3a, swrite=1
+# UVM_INFO driver.sv(21) @ 3595000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO scoreboard.sv(22) @ 3595000: uvm_test_top.env.scb [SCB Write] Stored data: SADDR=fffff96d, SWDATA=ffff8d3a mem[fffff96d]=0
+# UVM_INFO scoreboard.sv(41) @ 3595000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(44) @ 3595000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=1 | ptransfer=1 | SADDR=fffff96d | SWDATA=ffff8d3a | pready=1 |psel=1| f_data=0
+# UVM_INFO sequence_item.sv(18) @ 3595000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3595000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3605000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3605000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3605000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3615000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3615000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(62) @ 3625000: reporter [WRITE_DATA_STABLE] Write data stable
+# UVM_INFO interface.sv(51) @ 3625000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3625000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3635000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff2c36, SWDATA=ffffea37, swrite=0
+# UVM_INFO driver.sv(21) @ 3635000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3635000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3635000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3645000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff2c36, f_data=ffff3355, expected data=ffff3355,mem[ffff2c36]=0
+# UVM_INFO scoreboard.sv(41) @ 3645000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3645000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff2c36 | SWDATA=0 | pready=1 |psel=1| f_data=ffff3355
+# UVM_INFO interface.sv(51) @ 3645000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3645000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3655000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3655000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3665000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3665000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3675000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=3580, SWDATA=fffff7d2, swrite=0
+# UVM_INFO driver.sv(21) @ 3675000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3675000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3675000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3685000: uvm_test_top.env.scb [SCB_PASS] SADDR=3580, f_data=ffff098e, expected data=ffff098e,mem[3580]=0
+# UVM_INFO scoreboard.sv(41) @ 3685000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3685000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=3580 | SWDATA=0 | pready=1 |psel=1| f_data=ffff098e
+# UVM_INFO interface.sv(51) @ 3685000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3685000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3695000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3695000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3705000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3705000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3715000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff120c, SWDATA=ffff081e, swrite=0
+# UVM_INFO driver.sv(21) @ 3715000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3715000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3715000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3725000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff120c, f_data=0, expected data=0,mem[ffff120c]=0
+# UVM_INFO scoreboard.sv(41) @ 3725000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3725000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff120c | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3725000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3725000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3735000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3735000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3745000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3745000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3755000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=c025, SWDATA=ffff723f, swrite=0
+# UVM_INFO driver.sv(21) @ 3755000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3755000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3755000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3765000: uvm_test_top.env.scb [SCB_PASS] SADDR=c025, f_data=ab50, expected data=ab50,mem[c025]=0
+# UVM_INFO scoreboard.sv(41) @ 3765000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3765000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=c025 | SWDATA=0 | pready=1 |psel=1| f_data=ab50
+# UVM_INFO interface.sv(51) @ 3765000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3765000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3775000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3775000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3785000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3785000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3795000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff2836, SWDATA=ffff3fe3, swrite=0
+# UVM_INFO driver.sv(21) @ 3795000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3795000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3795000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3805000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff2836, f_data=ffff3355, expected data=ffff3355,mem[ffff2836]=0
+# UVM_INFO scoreboard.sv(41) @ 3805000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3805000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff2836 | SWDATA=0 | pready=1 |psel=1| f_data=ffff3355
+# UVM_INFO interface.sv(51) @ 3805000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3805000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3815000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3815000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3825000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3825000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3835000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffc706, SWDATA=58f6, swrite=0
+# UVM_INFO driver.sv(21) @ 3835000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3835000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3835000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3845000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffc706, f_data=2c6f, expected data=2c6f,mem[ffffc706]=0
+# UVM_INFO scoreboard.sv(41) @ 3845000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3845000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffc706 | SWDATA=0 | pready=1 |psel=1| f_data=2c6f
+# UVM_INFO interface.sv(51) @ 3845000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3845000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3855000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3855000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3865000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3865000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3875000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff6ddc, SWDATA=ffffc837, swrite=0
+# UVM_INFO driver.sv(21) @ 3875000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3875000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3875000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3885000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff6ddc, f_data=273, expected data=273,mem[ffff6ddc]=0
+# UVM_INFO scoreboard.sv(41) @ 3885000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3885000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff6ddc | SWDATA=0 | pready=1 |psel=1| f_data=273
+# UVM_INFO interface.sv(51) @ 3885000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3885000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3895000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3895000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3905000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3905000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3915000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffffaa44, SWDATA=ffff3f80, swrite=0
+# UVM_INFO driver.sv(21) @ 3915000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3915000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3915000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3925000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffffaa44, f_data=0, expected data=0,mem[ffffaa44]=0
+# UVM_INFO scoreboard.sv(41) @ 3925000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3925000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffffaa44 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3925000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3925000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3935000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3935000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3945000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3945000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3955000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=ffff2b8f, SWDATA=ffff7ce6, swrite=0
+# UVM_INFO driver.sv(21) @ 3955000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3955000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3955000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 3965000: uvm_test_top.env.scb [SCB_PASS] SADDR=ffff2b8f, f_data=0, expected data=0,mem[ffff2b8f]=0
+# UVM_INFO scoreboard.sv(41) @ 3965000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 3965000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=ffff2b8f | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 3965000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3965000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 3975000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3975000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 3985000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 3985000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 3995000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=f013, SWDATA=f51b, swrite=0
+# UVM_INFO driver.sv(21) @ 3995000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# UVM_INFO sequence_item.sv(18) @ 3995000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 3995000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO scoreboard.sv(29) @ 4005000: uvm_test_top.env.scb [SCB_PASS] SADDR=f013, f_data=0, expected data=0,mem[f013]=0
+# UVM_INFO scoreboard.sv(41) @ 4005000: uvm_test_top.env.scb [END OF A TRANSFER] One transation done
+# UVM_INFO monitor.sv(53) @ 4005000: uvm_test_top.env.agent.mon [Monitor ] preset=1 | pwrite=0 | ptransfer=1 | SADDR=f013 | SWDATA=0 | pready=1 |psel=1| f_data=0
+# UVM_INFO interface.sv(51) @ 4005000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 4005000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO sequence_item.sv(18) @ 4015000: reporter@@tx [sequence_item] constructor
+# UVM_INFO interface.sv(73) @ 4015000: reporter [ACCESS ACQUIRED] Slave access acquired
+# UVM_INFO interface.sv(51) @ 4025000: reporter [ADDRESS_STABLE] Address stable
+# UVM_INFO interface.sv(84) @ 4025000: reporter [SLAVE_READY] Slave is ready
+# UVM_INFO driver.sv(44) @ 4035000: uvm_test_top.env.agent.drv [Driver Drive] SADDR=2336, SWDATA=ffff856f, swrite=0
+# UVM_INFO driver.sv(21) @ 4035000: uvm_test_top.env.agent.drv [driver Class] run_phase
+# ====================================================
+# FINAL FUNCTIONAL COVERAGE VALUE = 97.06%
+# ====================================================
+# UVM_INFO /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 4035000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 4035000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO : 1494
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ACCESS ACQUIRED]   198
+# [ADDRESS_STABLE]   199
+# [Driver Drive]   100
+# [END OF A TRANSFER]   129
+# [Monitor ]   129
+# [PENABLE_CLEAR]     2
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCB Write]    59
+# [SCB_PASS]    70
+# [SLAVE_READY]   200
+# [TEST_DONE]     1
+# [Test Class]     2
+# [UVM Agent]     1
+# [UVM/RELNOTES]     1
+# [WRITE_DATA_STABLE]    59
+# [agent Class]     2
+# [driver Class]   102
+# [env Class]     2
+# [monitor Class]     1
+# [scoreboard Class]     1
+# [sequence Class]     1
+# [sequence_item]   230
+# [sequencer Class]     1
+# [test Class]     1
+# 
+# ** Note: $finish    : /usr/share/questa/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 4035 ns  Iteration: 77  Instance: /top
+# Saving coverage database on exit...
+# End time: 04:42:06 on Jun 12,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+End time: 04:42:06 on Jun 12,2026, Elapsed time: 0:00:12
+*** Summary *********************************************
+    qrun: Errors:   0, Warnings:   0
+    vlog: Errors:   0, Warnings:   0
+    vopt: Errors:   0, Warnings:   1
+    vsim: Errors:   0, Warnings:   0
+  Totals: Errors:   0, Warnings:   1
+Done
